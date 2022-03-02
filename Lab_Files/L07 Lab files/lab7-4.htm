@@ -9,7 +9,7 @@
 
 //create citiesArray
 //Use New York, Los Angeles, Chicago
-var citiesArray = new Array ("New York", "Los Angeles", "Chicago");
+var citiesArray = new Array ("New York", "Los Angeles", "Chicago").sort();
 
 
 
@@ -25,8 +25,9 @@ var citiesArray = new Array ("New York", "Los Angeles", "Chicago");
 //output citiesArray
 var len = citiesArray.length;
 for (let i = 0; i < len; i++) {
-    document.write(citiesArray + "<br />" + "<br />");    
+    document.write(citiesArray[i] + "<br />" + "<br />");    
 }
+alert(citiesArray[0] + "is now first because the array is sorted to alphabetical order");
 
 
 
