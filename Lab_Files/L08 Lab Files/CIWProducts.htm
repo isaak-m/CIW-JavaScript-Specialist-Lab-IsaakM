@@ -5,7 +5,7 @@
 <title>CIW Products</title>
 
 <script type="text/javascript">
-<!--
+
  var content, len;
 
  function productObject(id,item,description,price,image) {
@@ -51,7 +51,7 @@ function displayOne() {
     content += "<h3>Item:<b> " + this.item + "</b></h3><hr /></td></tr>";
     content += "<tr><td><strong>ID:</strong> " + this.id + "</td></tr>";
     content += "<tr><td><strong>Description:</strong> " + this.description + "</td></tr>";
-    content += "<tr><td><strong>Price:</strong><strong style=’color:#0000ff’> " + this.price + "</strong></td></tr>";
+    content += "<tr><td><strong>Price:</strong><strong style=ï¿½color:#0000ffï¿½> " + this.price + "</strong></td></tr>";
     content += "<tr><td><img src= '" + this.image + "' height='75' width='75'/>" + "</td></tr>";
     content += "</td></tr></table><form>";
     content += "<input type='button' value='ok' onclick='window.close();' />";
@@ -84,7 +84,7 @@ function showAll() {
     content = ""; 
     content += "<!DOCTYPE html><html><head><title>All CIW Products</title></head>"; 
     content += "<body><main><div style='text-align:center'>";
-    content += "<table style=’width: 85%;' border cellpadding='2'>";
+    content += "<table style=ï¿½width: 85%;' border cellpadding='2'>";
     content += "<tr><th colspan='2' style='text-align:center'>"; 
     content += "CIW Product Information</th></tr>"; 
     content += "<tr><th>Item</th><th>Price</th></tr>";
@@ -127,7 +127,7 @@ function newWindow(x) {
 <td style="width:90%; text-align:right;"> 
 <select name="itemName">
 <script type="text/javascript">
-<!--
+
 
   for (var i = 0; i < len; i++) {
 	document.write("<option>" + products[i].item);
