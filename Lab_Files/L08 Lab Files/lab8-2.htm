@@ -6,23 +6,23 @@
 
 <script type="text/javascript">
 
-    
+
 // create a class here
-class dev1{
-    constructor(name, brand){
+class device {
+    constructor (name, brand){
         this.name = name;
         this.brand = brand;
     }
     display() {
-        document.write('The name of the device is ' + this.name + 'and its brand is ' + this.brand);
+        document.write('The name of the device is ' + this.name + ' and its brand is ' + this.brand);
     }
 }
-var Vostro = new dev1('Vostro', "Dell")
+var dev1 = new device("Vostro", "Dell")
 
 //-->
 </script>
 </head>
-<body onload="dev1.display(Vostro)">
+<body onload="dev1.display()">
 <h3>CIW JavaScript Specialist</h3>
 <hr />
 
