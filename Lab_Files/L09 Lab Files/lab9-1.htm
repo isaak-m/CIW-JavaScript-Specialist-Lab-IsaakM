@@ -5,7 +5,7 @@
 <title>Lab 9-1</title>
 
 <script type="text/javascript">
-<!--
+
 function changeButton()
 {
   if(document.getElementById('radiobuttonWebdev').checked === true)
@@ -20,9 +20,27 @@ function changeButton()
 	var header = document.getElementById('radiobuttonWebdev').value.innerHTML = "Uncle Sam!";
 	alert("Hello " + header);
   }
+  if(document.getElementById('a').checked === true)
+  {
+	radioButton = document.getElementById('a').value;
+	var header = document.getElementById('a').value.innerHTML = "human!";
+	alert("Hello " + header);
+  }
+  if(document.getElementById('b').checked === true)
+  {
+	radioButton = document.getElementById('b').value;
+	var header = document.getElementById('b').value.innerHTML = "human!";
+	alert("Hello " + header);
+  }
+  if(document.getElementById('c').checked === true)
+  {
+	radioButton = document.getElementById('c').value;
+	var header = document.getElementById('c').value.innerHTML = "human!";
+	alert("Hello " + header);
+  }
   getTest();
 }
--->
+
 </script>
 </head>
 
@@ -39,7 +57,7 @@ function changeButton()
 
 
 <script type="text/javascript">
-<!--
+
 function getTest()
 {
   document.write("<h3>CIW JavaScript Specialist</h3>");
@@ -54,8 +72,20 @@ function getTest()
   {
 	document.write("<p>Here's a great site if you're interested in U.S. government:</p><a href=http://www.whitehouse.gov/>The White House</a>");
   }
+  if(radioButton == "A")
+  {
+	document.write("<p>Here's a great site for something:</p><a href=https://www.google.com/>something</a>");
+  }
+  if(radioButton == "B")
+  {
+	document.write("<p>Here's a great site for something:</p><a href=https://www.google.com/>something</a>");
+  }
+  if(radioButton == "C")
+  {
+	document.write("<p>Here's a great site for something:</p><a href=https://www.google.com/>something</a>");
+  }
 }
--->
+
 </script>
 
 <p>
