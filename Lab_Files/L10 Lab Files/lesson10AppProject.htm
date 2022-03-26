@@ -5,19 +5,34 @@
 <title>Lesson 10 Application Project</title>
 
 <script type="text/javascript">
-<!--
-
-
-    function validate(form) {
 
 
 
-
-
-
-
-
-
+    function validate(form) { 
+        //Visa
+        var visaCredit = /^(?:4[0-9]{12}(?:[0-9]{3})?)$/;
+        if ((document.ccForm.input.value = "visa") && (document.ccForm.input.text.match(cardno))) {
+            return true;
+        } else {
+            alert("Not a valid Visa credit card number!");
+            return false;
+        }
+        //Master Card
+        var mcCredit = /^(?:5[1-5][0-9]{14})$/;
+        if ((document.ccForm.input.value = "mc") && (document.ccForm.input.text.match(mcCredit))) {
+            return true;
+        } else {
+            alert("Not a valid Mastercard number!");
+            return false;
+        }
+        //American Express
+        var amexCredit = /^(?:3[47][0-9]{13})$/;
+        if ((document.ccForm.input.value = "amex") && (document.ccForm.input.text.match(amexCredit))) {
+            return true;
+        } else {
+            alert("Not a valid Amercican Express credit card number!");
+            return false;
+        }
     }
 
   
