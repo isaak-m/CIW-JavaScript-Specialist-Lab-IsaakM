@@ -14,7 +14,7 @@
         if ((document.ccForm.input.value = "visa") && (document.ccForm.input.text.match(cardno))) {
             return true;
         } else {
-            alert("Not a valid Visa credit card number!");
+            alert("invalid");
             return false;
         }
         //Master Card
@@ -22,7 +22,7 @@
         if ((document.ccForm.input.value = "mc") && (document.ccForm.input.text.match(mcCredit))) {
             return true;
         } else {
-            alert("Not a valid Mastercard number!");
+            alert("invalid");
             return false;
         }
         //American Express
@@ -30,7 +30,7 @@
         if ((document.ccForm.input.value = "amex") && (document.ccForm.input.text.match(amexCredit))) {
             return true;
         } else {
-            alert("Not a valid Amercican Express credit card number!");
+            alert("invalid");
             return false;
         }
     }
